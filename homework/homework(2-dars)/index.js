@@ -124,7 +124,8 @@
 
 
 
-// alert(alert(1) && alert(2)); j : 1, underfine
+// alert(alert(1) && alert(2));
+// j : 1, underfine
 
 
 
