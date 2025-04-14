@@ -1,23 +1,34 @@
-// let a = 123
-// a % 2 ? ++a : --a;
-// console.log(a);
+// // let a = 123
+// // a % 2 ? ++a : --a;
+// // console.log(a);
 
-// // if(a%2){
-// //     console.log("toq");
+// // // if(a%2){
+// // //     console.log("toq");
+// // // }
+// // // else{
+// // //     console.log("juft");
+
+// // // }
+
+// let a = 65,
+//   b = 5;
+// a > b ? console.log(a, b) : console.log(b, a);
+// // if (a>b) {
+// //     console.log(a);
+// //     console.log(b);
 // // }
 // // else{
-// //     console.log("juft");
-
+// //     console.log(b);
+// //     console.log(a);
 // // }
 
-let a = 65,
-  b = 5;
-a > b ? console.log(a, b) : console.log(b, a);
-// if (a>b) {
-//     console.log(a);
-//     console.log(b);
+// let text = "oxford jdbfu ";
+// if (text.includes("oxford") && text.length >= 6  ) {
+//     text = "New Oxford"
+//   console.log(text);
 // }
 // else{
-//     console.log(b);
-//     console.log(a);
+//     text = "?";
+//     console.log(text);
+    
 // }
