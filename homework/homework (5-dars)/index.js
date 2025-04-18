@@ -32,13 +32,13 @@
 
 
 
-// let age = +prompt("yoshingizni kriting")
-// let student = prompt("talabamisiz")
-// narxi = null
-// if (age < 18 || student === "ha"){
-//     narxi = 5000
-// }
-// else {
-//     narxi = 10000
-// }
-// console.log("sizdan atigi " + narxi + "so'm bo'ldi");
+// // let age = +prompt("yoshingizni kriting")
+// // let student = prompt("talabamisiz")
+// // narxi = null
+// // if (age < 18 || student === "ha"){
+// //     narxi = 5000
+// // }
+// // else {
+// //     narxi = 10000
+// // }
+// // console.log("sizdan atigi " + narxi + "so'm bo'ldi");

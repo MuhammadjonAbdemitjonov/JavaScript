@@ -9,7 +9,8 @@
 
 
 // let a = 2;
-// let x = 1 + (a *= 2)  j:5
+// let x = 1 + (a *= 2) 
+// j:5
 
 
 
@@ -124,7 +125,8 @@
 
 
 
-// alert(alert(1) && alert(2)); j : 1, underfine
+// alert(alert(1) && alert(2));
+// j : 1, underfine
 
 
 
