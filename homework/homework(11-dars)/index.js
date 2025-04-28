@@ -1,35 +1,47 @@
-// kankulyator
+kankulyator
 
-// // function Calculator() {
-// //     this.read = function() {
-// //         this.a = +prompt("Birinchi sonni kiriting:");
-// //         this.b = +prompt("Ikkinchi sonni kiriting:");
-// //     };
+function Calculator() {
+    this.read = function() {
+        this.a = +prompt("Birinchi sonni kiriting:");
+        this.amal =promt("amal kriting")
+        this.b = +prompt("Ikkinchi sonni kiriting:");
+    };
 
-// //     this.sum = function() {
-// //         return this.a + this.b;
-// //     };
+    if (calculator.amal == "+" ){
+        this.sum = function() {
+            return this.a + this.b;
+        };
+    }
+    if (calculator.amal == "-" ){
+        this.minus = function() {
+            return this.a - this.b;
+        };
+    }
+    if (calculator.amal == "*" ){
+        this.minus = function() {
+            return this.a * this.b;
+        };
+    }
+    if (calculator.amal == ":" ){
+        this.minus = function() {
+            return this.a / this.b;
+        };
+    }
 
-// //     this.subtract = function() {
-// //         return this.a - this.b;
-// //     };
 
-// //     this.multiply = function() {
-// //         return this.a * this.b;
-// //     };
+    this.bolish = function() {
+        return this.a / this.b;
+    };
+}
 
-// //     this.divide = function() {
-// //         return this.a / this.b;
-// //     };
-// // }
+let calculator = new Calculator();
+calculator.read();
 
-// // let calculator = new Calculator();
-// // calculator.read();
+alert("Yig'indisi = " + calculator.sum());
+alert("Ayirmasi = " + calculator.minus());
+alert("Ko'paytmasi = " + calculator.mul());
+alert("Bo'linmasi = " + calculator.bolish());
 
-// // alert("Yig'indisi = " + calculator.sum());
-// // alert("Ayirmasi = " + calculator.subtract());
-// // alert("Ko'paytmasi = " + calculator.multiply());
-// // alert("Bo'linmasi = " + calculator.divide());
 
 
 
