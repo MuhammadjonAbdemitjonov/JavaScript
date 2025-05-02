@@ -1,5 +1,5 @@
 // // function binar(n) {
-// //     const binary = n.toString(2); // sonni binaryga o'tkazish
+// //     const binary = n.toString(2);
 // //     let birlar = 0, nollar = 0;
   
 // //     for (let char of binary) {
