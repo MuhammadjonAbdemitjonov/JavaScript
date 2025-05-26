@@ -105,3 +105,19 @@ let people = [
 // 5..................................
 // people.sort((a, b) => a.lastName.localeCompare(b.lastName));
 // console.log(people);
+//qoshimcha...............
+function getCount(str) {
+  let result = {};
+
+  for (let char of str) {
+    if (result[char]) {
+      result[char]++;
+    } else {
+      result[char] = 1;
+    }
+  }
+
+  return result;
+}
+
+console.log(getCount("webbrain"));
