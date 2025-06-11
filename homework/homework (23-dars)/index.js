@@ -2,6 +2,32 @@
 // let b = a.filter((val) => val % 2);
 // console.log(b);
 // -----------------------------------------------
+// let arr = [5, 8, 6, 3, 4];
+// let juft = [];
+// let toq = [];
+// let count = 0;
+// let count2 = 0;
+
+// let newArr = [];
+
+// arr.forEach((value) => {
+//   value % 2 ? toq.push(value) : juft.push(value);
+// });
+
+// toq = toq.sort((a, b) => a - b);
+
+// arr.forEach((value, index) => {
+//   if (value % 2) {
+//     newArr.push(toq[count]);
+//     count++;
+//   } else {
+//     newArr.push(juft[count2]);
+//     count2++;
+//   }
+// });
+
+// console.log(newArr);
+// -----------------------------------------------
 // function Pangram(sentence) {
 //   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 //   const normalized = sentence.toLowerCase().replace(/[^a-z]/g, "");
@@ -19,3 +45,19 @@
 // });
 // console.log(natija);
 // -----------------------------------------------
+// let a = ["a", "b", "d", "e", "f", "j", "h", "l"];
+// let b = ["a", "b", "c", "d", "e", "f"];
+
+// let arr = [];
+
+// if (a.length < b.length) {
+//   for (let value of b) {
+//     if (!a.includes(value)) arr.push(value);
+//   }
+// } else {
+//   for (let value of a) {
+//     if (!b.includes(value)) arr.push(value);
+//   }
+// }
+
+// console.log(arr);
