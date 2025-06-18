@@ -1,6 +1,17 @@
-let arr = [7, 1, 6, 3, 9, 20];
-function total() {
-  this.sort((a, b) => a - b);
-  console.log(this[this.length - 1] - this[0]);
-}
-total.apply(arr);
+let obj = {
+  name: "Algoritm",
+  age: 20,
+  child: {
+    name: "oxford",
+    age: 10,
+  },
+};
+let newobj = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));
+console.log(newobj);
+Object.defineProperties(newobj.child, "name", {
+  writable: false,
+  configurable: false,
+});
+newobj.child.name = "vali";
+delete newobj.child.name;
+console.log(newobj);
