@@ -1,12 +1,12 @@
-// // let getval = (a) => {
-// //   return (b) => {
-// //     if (b) {
-// //       return getval(a + b);
-// //     }
-// //     return a;
-// //   };
-// // };
-// // console.log(getval(1)(2)(3)(-4)());
+// // // let getval = (a) => {
+// // //   return (b) => {
+// // //     if (b) {
+// // //       return getval(a + b);
+// // //     }
+// // //     return a;
+// // //   };
+// // // };
+// // // console.log(getval(1)(2)(3)(-4)());
 
 // let webbrain = {
 //   frontend: [
@@ -38,7 +38,7 @@
 //         sum += item.price;
 //       }
 //     }
-//   } else if (typeof data === "object") {
+//   } else {
 //     for (let key in data) {
 //       sum += getprice(data[key]);
 //     }
@@ -46,3 +46,35 @@
 //   return sum;
 // }
 // console.log(getprice(webbrain));
+
+let obj = {
+  name: "eshmat",
+  age: 45,
+  _pass1: 777,
+  chidl: {
+    name: "toshmat",
+    age: 20,
+    _pass2: 111,
+  },
+};
+function getKey(prop) {
+  for (let key in prop) {
+    if (typeof prop[key] === "object") {
+      return getKey(prop[key]);
+    } else {
+      console.log(key);
+    }
+  }
+}
+getKey(obj);
+
+let a = {
+  get(target, prop) {
+    if (prop.startsWith("_")) {
+    } else {
+      return target[prop];
+    }
+  },
+};
+let pr = new Proxy(obj, a);
+console.log(Object.keys(pr));

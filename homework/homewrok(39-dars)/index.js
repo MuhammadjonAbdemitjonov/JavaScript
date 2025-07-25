@@ -69,14 +69,16 @@ button.style.cssText = `
     height: 40px;
     background-color: #d7bf0a;
     border: none;
-    font-size: 20px
+    font-size: 20px;
+    cursor:pointer;
 `;
 button1.style.cssText = `
     width: 150px;
     height: 40px;
     background-color: #d7bf0a;
     border: none;
-    font-size: 20px
+    font-size: 20px;
+    cursor:pointer;
 `;
 function gol() {
   let darvozaWidth = darvoza.clientWidth;
@@ -91,6 +93,14 @@ function gol() {
   koptok.style.left = left + "px";
   koptok.style.top = top + "px";
 }
+darvoza.addEventListener("click", function (event) {
+  let rect = darvoza.getBoundingClientRect();
+  let x = event.clientX - rect.left;
+  let y = event.clientY - rect.top;
+
+  koptok.style.left = x - koptok.offsetWidth / 2 + "px";
+  koptok.style.top = y - koptok.offsetHeight / 2 + "px";
+});
 
 function boshqatan() {
   koptok.style.left = 0;

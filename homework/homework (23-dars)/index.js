@@ -1,7 +1,7 @@
 // let a = [1, 2, 3, 4, 5];
 // let b = a.filter((val) => val % 2);
 // console.log(b);
-// -----------------------------------------------
+
 // let arr = [5, 8, 6, 3, 4];
 // let juft = [];
 // let toq = [];
@@ -27,7 +27,7 @@
 // });
 
 // console.log(newArr);
-// -----------------------------------------------
+
 // function Pangram(sentence) {
 //   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 //   const normalized = sentence.toLowerCase().replace(/[^a-z]/g, "");
@@ -44,7 +44,7 @@
 //   return array.indexOf(val) === array.lastIndexOf(val);
 // });
 // console.log(natija);
-// -----------------------------------------------
+
 // let a = ["a", "b", "d", "e", "f", "j", "h", "l"];
 // let b = ["a", "b", "c", "d", "e", "f"];
 
