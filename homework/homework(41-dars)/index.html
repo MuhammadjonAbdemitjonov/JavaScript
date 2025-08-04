@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Parolni Tekshirish</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin:auto;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .valid {
+      color: green;
+    }
+    .invalid {
+      color: red;
+    }
+    #errors {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Oxford Login Form</h2>
+
+  <label>Username:</label>
+  <input type="text" id="username" placeholder="Foydalanuvchi nomi">
+
+  <label>Password:</label>
+  <input type="password" id="password" placeholder="Parol" onkeyup="validatePassword()">
+
+
+  <button onclick="submitForm()" id="loginBtn">Log in</button>
+
+  <h3>Parol talablari:</h3>
+  <ul>
+    <li id="length" class="invalid">Kamida 8 ta belgidan iborat bo'lishi kerak</li>
+    <li id="uppercase" class="invalid">Kamida 1 ta katta harf bo'lishi kerak</li>
+    <li id="lowercase" class="invalid">Kamida 1 ta kichik harf bo'lishi kerak</li>
+    <li id="number" class="invalid">Kamida 1 ta raqam bo'lishi kerak</li>
+    <li id="symbol" class="invalid">Kamida 1 ta maxsus belgi (! ? * . , va h.k.) bo'lishi kerak</li>
+  </ul>
+
+  <div id="errors"></div>
+
+  <script src="./index.js">
+    
+  </script>
+
+</body>
+</html>
+
