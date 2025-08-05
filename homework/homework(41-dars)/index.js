@@ -24,26 +24,26 @@ function validatePassword() {
 }
 
 function submitForm() {
-  let unmet = [];
+  let bajarilmagan = [];
 
   Object.keys(shart).forEach(function (key) {
     if (!shart[key]) {
-      unmet.push(key);
+      bajarilmagan.push(key);
     }
   });
 
-  if (unmet.length > 0) {
-    let messages = unmet.map(([key]) => {
+  if (bajarilmagan.length > 0) {
+    let messages = bajarilmagan.map((key) => {
       if (key === "length") {
-        unmet.push(" Kamida 8 ta belgidan iborat bo'lishi kerak");
+        return " Kamida 8 ta belgidan iborat bo'lishi kerak";
       } else if (key === "uppercase") {
-        unmet.push(" Kamida 1 ta katta harf bo'lishi kerak");
+        return " Kamida 1 ta katta harf bo'lishi kerak";
       } else if (key === "lowercase") {
-        unmet.push(" Kamida 1 ta kichik harf bo'lishi kerak");
+        return " Kamida 1 ta kichik harf bo'lishi kerak";
       } else if (key === "number") {
-        unmet.push(" Kamida 1 ta raqam bo'lishi kerak");
+        return " Kamida 1 ta raqam bo'lishi kerak";
       } else if (key === "symbol") {
-        unmet.push(" Kamida 1 ta maxsus belgi bo'lishi kerak");
+        return " Kamida 1 ta maxsus belgi bo'lishi kerak";
       }
     });
 

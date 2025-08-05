@@ -62,7 +62,6 @@ function render() {
     tugadi.addEventListener("change", () => {
       val.done = tugadi.checked;
 
-      tugadi.style.overflow = "hidden";
       render();
     });
 
