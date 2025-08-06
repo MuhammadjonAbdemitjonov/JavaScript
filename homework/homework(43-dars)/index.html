@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Parolni Tekshirish</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid black;
+    }
+
+    .false {
+      border-bottom: 2px solid red;
+    }
+
+    .true {
+      border-bottom: 2px solid green;
+    }
+
+    .input {
+      position: relative;
+    }
+
+    .input img {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      display: none;
+    }
+
+    .input img.visible {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+
+<form action="#">
+  <h2>Oxford Login Form</h2>
+
+  <input type="text" id="username" placeholder="Foydalanuvchi nomi">
+  <input type="email" id="email" placeholder="email">
+
+  <div class="input">
+    <input type="password" id="password1" class="password" placeholder="Parol">
+    <img src="./accept.png" class="accept" alt="accept">
+    <img src="./wrong-svgrepo-com.svg" class="wrong" alt="wrong">
+  </div>
+
+  <div class="input">
+    <input type="password" id="password2" class="password" placeholder="Confirm password">
+    <img src="./accept.png" class="accept" alt="accept">
+    <img src="./wrong-svgrepo-com.svg" class="wrong" alt="wrong">
+  </div>
+
+  <button type="button" onclick="submitForm()" id="loginBtn">Log in</button>
+</form>
+
+<script src="./index.js">
+  
+</script>
+
+</body>
+</html>
